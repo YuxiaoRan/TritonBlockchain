@@ -1,6 +1,5 @@
 /**
  * NAME: Yuxiao Ran
- * ACCOUNT: cs12fet
  * DATE: 11/12/18
  */
 
