@@ -1,0 +1,26 @@
+Name: Yuxiao Ran
+Account: cs12fet
+Date: 11/12/18
+
+1) design of myHash(String value) in HashTable.java:
+    The hash function I implement in HashTable.java utilizes ASCII table 
+to convert each character in the input String to an int, and multiplies it 
+by a number that is generated based on the character's index. I vastly make 
+use of prime numbers as multipliers in this algorithm to make sure my function 
+is deterministic. Finally, I add these numbers up and mod the sum by the 
+table size to get the final hash value.
+
+2) design of hashBlock() in TritonBlock.java:
+    As I notice that the hash values in the example output can be String forms 
+of big numbers and negative numbers, I decide to use each block's timestamp, 
+which is generally a big long value and varies in milliseconds, as the base 
+of my hash function. Since long values could store more information than int 
+values, I convert timestamps to int by continuously deviding them by a prime 
+number. I also notice that each block could have a unique index and a unique 
+proofId, so I use these two properties and prime numbers in my algorithm to 
+grant my hash function randomization and uniqueness.
+
+3) proof of work task in TritonBlockChain.java:
+    I do this part simply by referring to the algorithm provided in the 
+writeup, which is to generate a new proofId by finding the least common 
+multiple of the previous proofId and a prime number.
