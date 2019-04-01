@@ -1,6 +1,5 @@
 /**
  * NAME: Yuxiao Ran
- * ACCOUNT: cs12fet
  * DATE: 11/12/18
  */
 
@@ -13,7 +12,7 @@ import java.util.*;
  */
 public class TritonBlockChain {
 
-	private static final String MINE_REWARD = "1";
+    private static final String MINE_REWARD = "1";
     /*Blockchain class variable*/
     private List<TritonBlock> blockchain;
 
