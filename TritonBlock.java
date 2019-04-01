@@ -1,6 +1,5 @@
 /**
  * NAME: Yuxiao Ran
- * ACCOUNT: cs12fet
  * DATE: 11/12/18
  */
 
@@ -11,7 +10,7 @@
  * each block to a String hash value.
  */
 public class TritonBlock {
-	/*Class variables, all the attributes of the block*/
+    /*Class variables, all the attributes of the block*/
     private int index;
     private long timestamp;
     private TritonData data;
